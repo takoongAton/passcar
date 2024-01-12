@@ -20,6 +20,7 @@ button {letter-spacing:-0.025em;}
 .ui_header .btn_more {height:48px;}
 header .ui_header {height:48px;}
 header .ui_header .title {line-height:48px;}
+header .ui_header .title strong {font-weight:bold;}
 header .ui_header .prev::before {top:12px; left:18px; width:24px; height:24px; background:url('../img/common/btn_top_back_lgup.png') no-repeat left top; background-size:24px 24px; border:0 none; transform:rotate(0);}
 header .ui_header .home::before {position:absolute; top:12px; left:18px; width:24px; height:24px; background:url('../img/common/btn_top_home_lgup.png') no-repeat left top; background-size:24px 24px; border:0 none; transform:rotate(0);}
 
@@ -34,11 +35,14 @@ header .ui_header .home::before {position:absolute; top:12px; left:18px; width:2
 
 
 /* LGT 닫기 버튼 */
-.ui_header .close {position:absolute; top:0; right:0; width:60px; height:100%;}
+.ui_header .close {position:absolute; top:0; right:6px; width:60px; height:100%;}
 .ui_header .close::before,
-.ui_header .close::after {position:absolute; top:50%; left:53%; width:41%; height:2px; background-color:#222; border-radius:100px;}
+.ui_header .close::after {content:unset; position:absolute; top:50%; left:53%; width:41%; height:2px; background-color:#222; border-radius:100px;}
 .ui_header .close::before {-webkit-transform:translate(-50%,-50%) rotate(-45deg); -ms-transform:translate(-50%,-50%) rotate(-45deg); transform:translate(-50%,-50%) rotate(-45deg);}
 .ui_header .close::after {-webkit-transform:translate(-50%,-50%) rotate(45deg); -ms-transform:translate(-50%,-50%) rotate(45deg); transform:translate(-50%,-50%) rotate(45deg)}
+
+header .ui_header .close {display:flex; justify-content:center; align-items:center; width:48px; height:48px;}
+header .ui_header .close button {display:block; width:24px; height:24px; background:url('../img/common/btn_top_close.png') no-repeat left top / contain;}
 
 /* 사용안함
 div.ui_page .titBox div.sell button:last-child {color:#ff3782;}
